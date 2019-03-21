@@ -38,7 +38,7 @@ posNeg %>%
   labs(y = "Contribution to sentiment", x = NULL) + 
   coord_flip()
 
-####TEXT ANALYSIS
+##TEXT ANALYSIS
 corpus = Corpus(VectorSource(starReviews$text))
 corpus = tm_map(corpus, tolower)
 corpus = tm_map(corpus, removePunctuation)
