@@ -8,7 +8,7 @@ library(tidytext)
 library(wordcloud)
 
 ##READ IN THE DATA
-arizona = read.csv("/Volumes/Not Your Hard Drive/Springboard/Yelp Data/yelp_dataset/random300.csv", stringsAsFactors = FALSE)
+arizona = read.csv("/XXXXXXX/XXXXXXXX/Springboard/Yelp Data/yelp_dataset/random300.csv", stringsAsFactors = FALSE)
 starReviews = arizona %>% select(text, stars.y)
 starReviews$Negative <- as.factor(starReviews$stars.y < 3)
 
